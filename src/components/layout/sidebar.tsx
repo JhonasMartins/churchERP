@@ -239,7 +239,7 @@ export function Sidebar() {
           <div className="fixed inset-0 bg-background/80 backdrop-blur-sm" onClick={() => setSidebarOpen(false)} />
           <div className="relative bg-background w-64 h-full shadow-xl border-r">
             <div className="p-4 border-b border-border">
-              <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <h1 className="text-xl font-bold text-foreground">
                 Church ERP
               </h1>
               <p className="text-xs text-muted-foreground">Sistema de Gestão</p>
@@ -309,7 +309,7 @@ export function Sidebar() {
       {/* Desktop sidebar */}
       <div className="hidden md:block w-64 bg-background border-r h-screen fixed shadow-lg">
         <div className="p-4 border-b border-border">
-          <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 className="text-xl font-bold text-foreground">
             Church ERP
           </h1>
           <p className="text-xs text-muted-foreground">Sistema de Gestão</p>

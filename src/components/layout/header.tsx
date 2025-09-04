@@ -47,7 +47,7 @@ export function Header() {
     <header className="bg-background/80 backdrop-blur-md border-b border-border h-16 fixed top-0 right-0 left-0 md:left-64 z-30">
       <div className="flex items-center justify-between h-full px-4 md:px-6">
         <div className="flex items-center gap-4">
-          <h1 className="text-lg font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 className="text-lg font-semibold text-foreground">
             {title}
           </h1>
         </div>
