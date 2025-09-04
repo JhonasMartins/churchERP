@@ -1,5 +1,12 @@
 # Church Management System (ERP)
 
+## 🌐 Language Options / Opções de Idioma
+
+- 🇺🇸 [English](README_EN.md) (this file)
+- 🇧🇷 [Portuguese (Brazil) - Português do Brasil](README.md)
+
+---
+
 A comprehensive church management system built with Next.js, specifically designed for evangelical churches to manage all their operations efficiently.
 
 ## 🕍 About the Project

@@ -1,5 +1,12 @@
 # Sistema de Gestão para Igrejas (ERP)
 
+## 🌐 Language Options / Opções de Idioma
+
+- 🇧🇷 [Portuguese (Brazil) - Português do Brasil](README.md) (this file)
+- 🇺🇸 [English](README_EN.md)
+
+---
+
 Um sistema abrangente de gestão para igrejas desenvolvido com Next.js, projetado especificamente para igrejas evangélicas gerenciarem todas as suas operações de forma eficiente.
 
 ## 🕍 Sobre o Projeto
