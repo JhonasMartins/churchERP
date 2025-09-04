@@ -17,7 +17,9 @@ import {
   Building,
   User,
   CreditCard,
-  CheckCircle
+  CheckCircle,
+  Mail,
+  Phone
 } from "lucide-react";
 import { 
   DropdownMenu,
