@@ -40,7 +40,7 @@ export default function RootLayout({
             <Sidebar />
             <div className="md:ml-64 flex flex-col flex-1">
               <Header />
-              <main className="flex-1 p-4 md:p-6 bg-gradient-to-b from-background to-muted/30">
+              <main className="flex-1 p-4 md:p-6 bg-gradient-to-b from-background to-muted/30 mt-16 md:mt-16">
                 {children}
               </main>
             </div>
