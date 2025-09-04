@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Bar, BarChart, Line, LineChart, Pie, PieChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { Bar, BarChart, Line, LineChart, Pie, PieChart as RechartsPieChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 export default function AdminReportsPage() {
   const [dateRange, setDateRange] = useState("last30days");
@@ -173,7 +173,7 @@ export default function AdminReportsPage() {
             <CardContent>
               <div className="h-80">
                 <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
+                  <RechartsPieChart>
                     <Pie
                       data={moduleUsageData}
                       cx="50%"
@@ -185,7 +185,7 @@ export default function AdminReportsPage() {
                       label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
                     />
                     <Tooltip />
-                  </PieChart>
+                  </RechartsPieChart>
                 </ResponsiveContainer>
               </div>
             </CardContent>
