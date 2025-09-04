@@ -266,9 +266,58 @@ src/
 │   ├── dashboard/       # Componentes do painel
 │   ├── ui/              # Componentes shadcn/ui
 │   └── theme-provider.tsx # Provedor de temas
+├── db/                  # APIs de acesso ao banco de dados PostgreSQL
+│   ├── index.ts         # Exportação de todas as APIs
+│   ├── config.ts        # Configuração do banco de dados
+│   ├── types.ts         # Tipos das entidades do banco de dados
+│   ├── members.ts       # API para gestão de membros
+│   ├── groups.ts        # API para gestão de grupos
+│   ├── events.ts        # API para gestão de eventos
+│   ├── attendance.ts    # API para controle de frequência
+│   ├── donations.ts     # API para gestão de doações
+│   ├── ministries.ts    # API para gestão de ministérios
+│   ├── users.ts         # API para gestão de usuários
+│   ├── campaigns.ts     # API para gestão de campanhas
+│   ├── financial.ts     # API para gestão financeira
+│   └── volunteers.ts    # API para coordenação de voluntários
 └── lib/                 # Funções utilitárias
     └── utils.ts         # Funções auxiliares
 ```
+
+## 🗄️ Camada de Banco de Dados
+
+O sistema inclui uma camada completa de APIs para acesso ao banco de dados PostgreSQL, projetada para gerenciar todas as entidades do sistema:
+
+### Entidades do Banco de Dados
+- **Membros**: Informações completas sobre os membros da igreja
+- **Grupos**: Gestão de grupos pequenos e células
+- **Eventos**: Calendário de eventos e programação
+- **Frequência**: Registro de presença em eventos
+- **Doações**: Controle de dízimos, ofertas e doações
+- **Ministérios**: Organização dos ministérios da igreja
+- **Usuários**: Gestão de contas e permissões do sistema
+- **Campanhas**: Acompanhamento de campanhas e arrecadações
+- **Financeiro**: Gestão de receitas e despesas
+- **Voluntários**: Coordenação de voluntários e habilidades
+
+### Características da Implementação
+- APIs assíncronas para todas as operações CRUD
+- Tipagem estática com TypeScript para segurança
+- Estrutura modular com arquivos separados por entidade
+- Mock de dados para desenvolvimento e testes
+- Pronta para conexão com banco de dados PostgreSQL real
+
+### Configuração do Banco de Dados
+Para conectar o sistema a um banco de dados PostgreSQL real, configure as variáveis de ambiente:
+```env
+DB_USER=seu_usuario
+DB_HOST=localhost
+DB_NAME=nome_do_banco
+DB_PASSWORD=sua_senha
+DB_PORT=5432
+```
+
+Em seguida, descomente as linhas de conexão no arquivo `src/db/config.ts`.
 
 ## 🎨 Recursos de UI/UX
 
